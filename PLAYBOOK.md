@@ -13,9 +13,10 @@ Worked example of every file: `episodes/ep03_localsend/`.
   penguin: `p_smug`, `p_explain` (marker), `p_think`, `p_shock`, `p_embar` (sweat drop), `p_celebrate`.
 
 ## 0. Decide whether to make a reel
+Goal: the queue always holds at least 4 days of reels, so the streak survives the Mac being off for 3 to 4 days.
 1. `nuelink_list_posts` (brand 21035, collection 110596, view QUEUE). Count posts whose postDate is in the future.
-2. If 3 or more are already waiting: stop, nothing to do (report "queue full").
-3. Otherwise make the next `plan.json` entry with `"status": "planned"` (lowest `ep`). If only 0 or 1 are waiting, make two episodes in this run.
+2. If 5 or more are already waiting: stop, nothing to do (report "queue full").
+3. Otherwise make `plan.json` entries with `"status": "planned"` (lowest `ep` first) until 5 are waiting, but at most 3 in one run.
 
 ## 1. Research (10 min max)
 - Check the repo is alive in Chrome: open any github.com tab, then in that tab run `fetch('/<owner>/<repo>')` and regex `stargazerCount:(\d+)` and `isArchived:(!?\d)`. Skip the repo (mark `"status":"skipped"` with a reason, take the next one) if archived, 404, or clearly abandoned.
@@ -44,23 +45,20 @@ Write numbers as words for TTS ("four gig"). Keep every claim checkable against 
 If AI Studio shows a quota or paid-key error, stop and report it.
 
 ## 4. Timing
-`ffmpeg -i vo.wav -af silencedetect=n=-40dB:d=0.25 -f null - 2>&1 | grep silence_`. Each block boundary is a silence. Some lines also have internal pauses (after "...", after a sentence). Copy `episodes/ep03_localsend/words.py` and fill `SEG` with `(speaker 'R'|'I', start, end, text)` for each speech chunk between silences. Running it writes `words.json` and `words.js` (word i has `.s` start, `.e` end, `.sp` speaker). Print the list to know word indexes.
+Save the AI Studio wav as `episodes/<slug>/vo.wav` and the script as `episodes/<slug>/script.json` = `[["R","line 1"],["I","line 2"],...]`, one entry per speech block, text exactly as typed in AI Studio. Run `python3 engine/align.py episodes/<slug>`. It keeps the original as `vo_raw.wav`, shortens long pauses (a 47 s take becomes about 39 s), and writes `words.json` / `words.js`. It prints every word with its index and start time; use those indexes in the timeline. Aim for a final length of 36 to 41 s; if it is longer, shorten the reveal line in AI Studio and generate again.
 
 ## 5. Timeline (the creative part)
-Copy `episodes/ep03_localsend/timeline.js` and keep these parts unchanged: background, `character()`, the speech bubble block, and `window.render`. Rewrite only:
-- `DURATION` (last word end plus about 0.9 s).
-- Panels (`scene(a, b, build)`) for the top area (y 190 to 1010). Reuse the ep03 panel types:
-  P1 task card on the whiteboard (words, icons, red stamps, timer) / P2 the intern's handwritten plan with a red ETA circle and strike / P3 red X plus the "RULE #1" card / P4 the reveal (logo tile, big name, flash, fact pills) / P5 the demo (real screenshot in `.phone` or `.shot`, tap ripple, flying chip, progress, "Done ✓", benefit pills) / P6 the payoff board / P7 CTA headline plus the "Comment WORD" card plus @reporacoon.
-  Make the hook panel and the demo specific to the repo. Do not copy LocalSend's icons.
-- Pose schedules for `raccoon` and `penguin` (times in seconds; the penguin enters with `[t, 'p_smug', 1]` just before the intern's first line).
-- `G` (bubble groups, max about 12 words each, split at sentence ends) and `ACC` (highlighted word indexes).
-- `footer(l, '<Name> · <License> · screenshot: <source>')` on the demo panel.
-Check stills before the full render: copy `words.js` and `timeline.js` into `engine/scene/`, the episode PNGs into `engine/scene/img/`, then run `cd engine && python3 render.py stills 0.5 3.9 7 11 15 18 22 26 30 34`. Look at every still for overlaps or cut-off text.
+Write `episodes/<slug>/timeline.js` as one `SKIT({...})` call using `engine/scene/skit.js`. Copy the closest example: `episodes/ep04_markitdown/timeline.js` (terminal demo), `ep05_scrcpy` (real screenshot plus checklist), `ep06_stirling-pdf` (screenshot with camera zoom plus flying files). (`ep03_localsend` is the older hand-written version; do not copy it.)
+- `panels`: 7 entries `[start, end, (l, h) => renderFn]`, with boundaries at the first word of each beat (`T(i) = wt(i) - 0.1`). Standard builders: `h.task` (hook card: two word lines, a small custom visual, red stamps, timer), `h.plan` (intern's handwritten list, red ETA circle, strike plus fix), `h.rule` (red X plus a rule card), `h.reveal` (logo tile, name with a flash, two pill rows), `h.payoff` (struck-out time, "saved."), `h.cta` (headline plus "Comment WORD" card). The demo panel is custom each time: use `shot(l, 'file.png', w, h, box)` with `.cam(cx, cy, width)`, `h.el`, `h.popIn`, `ripple(l)`, and `footer(l, '<Name> · <License> · screenshot: <source>')`.
+- `raccoon` / `intern`: pose schedules `[[time, pose], ...]`; the intern starts `[0, null]` and enters with `[wt(first intern word) - 0.15, 'p_smug', 1]`.
+- `accent`: word indexes to highlight in the speech bubbles (bubbles are grouped automatically).
+- Draw your own simple logo SVG for the reveal; never copy the project's real logo.
+Check stills before the full render: `engine/stills.sh episodes/<slug> <8 to 13 times>` writes `episodes/<slug>/stills.jpg`. Look at it for overlaps, text running off the card, and wrong timing. Fix and repeat.
 
 ## 6. Build
-- `sfx.json`: `whoosh` at every panel change; `thud` for stamps and the red X; `pophi` for each pill, badge or list item; `pop` for the penguin entrance and the reveal; `click` for taps; `ding` for "Done" and the reveal.
-- `cover.json`: `{"ep":"REPO #NN","title":"<2 short lines, one in <i>italic</i>>","repo":"owner / repo","mascot":"r_cross"}`. The cover is the first frame on Instagram, so make it a question or contrast (example: "3 months<br>or <i>3 seconds?</i>").
-- Run `engine/build.sh episodes/<slug>` (about 2.5 min). Output: `reels/<slug>.mp4` and `covers/epNN.png`.
+- `sfx.json` (copy `episodes/ep04_markitdown/sfx.json` for the shape; times in seconds): `whoosh` at every panel change; `thud` for stamps and the red X; `pophi` for each pill, badge or list item; `pop` for the penguin entrance and the reveal; `click` for taps; `ding` for "Done" and the reveal.
+- `cover.json`: `{"ep":"REPO #NN","title":"<2 short lines, max about 16 characters each, one in <i>italic</i>>","repo":"owner / repo","mascot":"<pose>"}`. Use a different raccoon pose than the last two covers (check `covers/`). The title must not wrap to a third line: open `covers/epNN.png` after the build and check. The cover is the first frame on Instagram, so make it a question or contrast (example: "3 months<br>or <i>3 seconds?</i>").
+- Run `engine/build.sh episodes/<slug>` (about 3 min). Output: `reels/<slug>.mp4` and `covers/epNN.png`.
 
 ## 7. Publish
 1. `git add -A && git commit` (message "Add epNN <Name>" plus the attribution trailers), then push.

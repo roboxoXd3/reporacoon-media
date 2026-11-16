@@ -1,0 +1,21 @@
+voice 46.9s -> 38.9s, 33 chunks, 117 words
+0 Your 0.0 R | 1 phone 0.229 R | 2 is 0.499 R | 3 across 0.644 R | 4 the 0.956 R | 5 room. 1.143 R
+6 Control 1.735 R | 7 it 2.088 R | 8 from 2.233 R | 9 your 2.462 R | 10 laptop. 2.69 R | 11 Mouse, 3.106 R
+12 keyboard, 3.74 R | 13 full 4.238 R | 14 screen. 4.467 R | 15 No 5.092 R | 16 app 5.238 R | 17 on 5.685 R
+18 the 5.83 R | 19 phone. 6.017 R | 20 Go. 6.391 R | 21 Easy! 6.9 I | 22 I'll 7.475 I | 23 build 7.913 I
+24 a 8.169 I | 25 streaming 8.268 I | 26 server, 8.682 I | 27 an 9.356 I | 28 Android 9.494 I | 29 app, 9.829 I
+30 a 10.365 I | 31 desktop 10.463 I | 32 client, 10.798 I | 33 touch 11.453 I | 34 controls... 11.709 I | 35 give 12.182 I
+36 me 12.659 I | 37 a 12.797 I | 38 month. 13.155 I | 39 A 13.77 R | 40 month? 13.829 R | 41 Okay... 14.3 I
+42 three 14.46 I | 43 weeks? 14.59 I | 44 Never 15.03 R | 45 build 15.305 R | 46 what 15.579 R | 47 thousands 15.811 R
+48 already 16.255 R | 49 use. 16.613 R | 50 It's 16.909 R | 51 called 17.099 R | 52 scrcpy. 17.676 R | 53 Screen 18.098 R
+54 copy. 18.415 R | 55 Free, 18.752 R | 56 open 19.09 R | 57 source, 19.322 R | 58 for 20.005 R | 59 Windows, 20.195 R
+60 Mac 21.179 R | 61 and 21.369 R | 62 Linux. 21.559 R | 63 Nothing 21.939 R | 64 gets 22.298 R | 65 installed 22.53 R
+66 on 22.973 R | 67 the 23.121 R | 68 phone. 23.311 R | 69 No 23.691 R | 70 root. 24.099 R | 71 Turn 24.437 R
+72 on 24.669 R | 73 USB 24.817 R | 74 debugging, 25.007 R | 75 plug 25.816 R | 76 in, 26.308 R | 77 run 26.561 R
+78 it. 26.751 R | 79 Done. 27.005 R | 80 Up 27.342 R | 81 to 27.49 R | 82 a 27.928 R | 83 hundred 28.033 R
+84 and 28.632 R | 85 twenty 29.082 R | 86 frames 29.659 R | 87 per 29.976 R | 88 second, 30.166 R | 89 with 30.588 R
+90 sound. 30.82 R | 91 So... 31.44 I | 92 what 31.762 I | 93 do 32.057 I | 94 I 32.504 I | 95 do 32.639 I
+96 with 33.086 I | 97 my 33.381 I | 98 three 33.569 I | 99 weeks? 33.917 I | 100 Use 34.66 R | 101 them 34.83 R
+102 to 35.037 R | 103 find 35.169 R | 104 where 35.377 R | 105 you 35.622 R | 106 left 35.792 R | 107 your 36.0 R
+108 phone. 36.207 R | 109 Comment 36.807 R | 110 PHONE, 37.127 R | 111 and 37.467 R | 112 I'll 37.947 R | 113 DM 38.117 R
+114 you 38.249 R | 115 the 38.418 R | 116 link. 38.588 R | 

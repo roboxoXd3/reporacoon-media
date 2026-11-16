@@ -1,0 +1,20 @@
+voice 44.6s -> 39.1s, 23 chunks, 111 words
+0 Merge 0.0 R | 1 three 0.32 R | 2 PDFs, 0.64 R | 3 shrink 1.034 R | 4 them, 1.403 R | 5 and 1.797 R
+6 sign 2.018 R | 7 the 2.289 R | 8 last 2.511 R | 9 page. 2.781 R | 10 Without 3.175 R | 11 uploading 3.593 R
+12 them 4.37 R | 13 to 4.641 R | 14 some 4.813 R | 15 random 5.084 R | 16 website. 5.453 R | 17 Go. 5.995 R
+18 Easy! 6.56 I | 19 I'll 7.194 I | 20 build 7.694 I | 21 a 7.997 I | 22 PDF 8.114 I | 23 engine, 8.324 I
+24 a 9.041 I | 25 merge 9.158 I | 26 tool, 9.461 I | 27 a 9.835 I | 28 compressor, 9.952 I | 29 a 10.606 I
+30 signature 10.722 I | 31 pad... 11.213 I | 32 give 11.539 I | 33 me 12.056 I | 34 six 12.22 I | 35 weeks. 12.43 I
+36 Six 13.11 R | 37 weeks? 13.48 R | 38 Okay... 14.48 I | 39 five? 15.115 I | 40 Rule 15.75 R | 41 number 16.013 R
+42 one. 16.371 R | 43 Check 16.705 R | 44 GitHub 17.276 R | 45 before 17.634 R | 46 you 17.992 R | 47 build. 18.207 R
+48 It's 18.636 R | 49 called 19.111 R | 50 Stirling 19.47 R | 51 PDF. 19.923 R | 52 Over 20.257 R | 53 fifty 20.52 R
+54 PDF 21.09 R | 55 tools 21.305 R | 56 in 21.616 R | 57 one 21.783 R | 58 app. 21.998 R | 59 Merge, 22.332 R
+60 split, 22.762 R | 61 compress, 23.452 R | 62 sign, 24.025 R | 63 even 24.407 R | 64 OCR. 24.669 R | 65 And 25.004 R
+66 it 25.218 R | 67 runs 25.386 R | 68 on 25.648 R | 69 your 25.815 R | 70 own 26.078 R | 71 machine, 26.553 R
+72 so 27.078 R | 73 your 27.245 R | 74 files 27.508 R | 75 never 27.818 R | 76 go 28.359 R | 77 to 28.526 R
+78 some 28.693 R | 79 outside 28.956 R | 80 service. 29.361 R | 81 Drop 29.887 R | 82 your 30.149 R | 83 PDFs, 30.672 R
+84 pick 31.054 R | 85 a 31.317 R | 86 tool. 31.436 R | 87 Done. 31.818 R | 88 So... 32.48 I | 89 what 33.006 I
+90 do 33.249 I | 91 I 33.674 I | 92 do 33.785 I | 93 with 33.94 I | 94 my 34.183 I | 95 five 34.338 I
+96 weeks? 34.582 I | 97 Spend 35.24 R | 98 them 35.523 R | 99 on 35.762 R | 100 work 35.914 R | 101 worth 36.153 R
+102 signing. 36.436 R | 103 Comment 37.174 R | 104 PDF, 37.543 R | 105 and 37.848 R | 106 I'll 38.043 R | 107 DM 38.239 R
+108 you 38.391 R | 109 the 38.587 R | 110 link. 38.782 R | 

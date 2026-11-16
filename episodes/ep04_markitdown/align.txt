@@ -1,0 +1,21 @@
+voice 47.2s -> 39.2s, 26 chunks, 114 words
+0 Fifty 0.0 R | 1 PDFs, 0.283 R | 2 Word 0.632 R | 3 files 0.871 R | 4 and 1.154 R | 5 slide 1.35 R
+6 decks. 1.633 R | 7 Turn 2.026 R | 8 them 2.265 R | 9 into 2.505 R | 10 clean 2.744 R | 11 text 3.287 R
+12 your 3.527 R | 13 AI 3.766 R | 14 can 3.919 R | 15 actually 4.115 R | 16 read. 4.529 R | 17 By 4.877 R
+18 tonight. 5.03 R | 19 Go. 5.509 R | 20 Easy! 6.03 I | 21 I'll 6.64 I | 22 write 7.097 I | 23 a 7.381 I
+24 PDF 7.751 I | 25 parser, 7.948 I | 26 a 8.385 I | 27 Word 8.495 I | 28 parser, 8.735 I | 29 a 9.173 I
+30 PowerPoint 9.282 I | 31 parser, 9.785 I | 32 handle 10.223 I | 33 the 10.551 I | 34 tables... 10.748 I | 35 give 11.186 I
+36 me 11.426 I | 37 two 11.579 I | 38 weeks. 11.776 I | 39 Two 12.43 R | 40 weeks? 12.637 R | 41 Okay... 13.31 I
+42 ten 13.599 I | 43 days? 14.021 I | 44 Senior 14.57 R | 45 dev 14.905 R | 46 rule. 15.105 R | 47 Search 15.992 R
+48 GitHub 16.327 R | 49 before 16.921 R | 50 you 17.256 R | 51 open 17.457 R | 52 your 17.702 R | 53 editor. 17.947 R
+54 It's 18.393 R | 55 called 18.594 R | 56 MarkItDown. 19.189 R | 57 Made 19.813 R | 58 by 20.059 R | 59 Microsoft, 20.475 R
+60 open 21.055 R | 61 source, 21.3 R | 62 and 21.746 R | 63 it 21.947 R | 64 reads 22.103 R | 65 PDF, 22.653 R
+66 Word, 22.965 R | 67 PowerPoint, 23.322 R | 68 Excel, 23.947 R | 69 even 24.348 R | 70 images 24.593 R | 71 and 24.928 R
+72 audio. 25.129 R | 73 Install 25.53 R | 74 it, 25.909 R | 75 point 26.177 R | 76 it 26.467 R | 77 at 26.883 R
+78 a 27.039 R | 79 file, 27.151 R | 80 get 27.768 R | 81 Markdown. 27.968 R | 82 Done. 28.764 R | 83 Headings, 29.121 R
+84 lists 30.176 R | 85 and 30.466 R | 86 tables 30.667 R | 87 survive. 31.001 R | 88 Built 31.492 R | 89 for 32.042 R
+90 AI. 32.242 R | 91 So... 32.77 I | 92 what 33.028 I | 93 do 33.525 I | 94 I 33.676 I | 95 do 33.784 I
+96 with 33.934 I | 97 my 34.171 I | 98 ten 34.322 I | 99 days? 34.516 I | 100 Feed 35.12 R | 101 the 35.36 R
+102 AI. 35.557 R | 103 Not 35.819 R | 104 the 36.276 R | 105 parser. 36.473 R | 106 Comment 37.17 R | 107 MARK, 37.541 R
+108 and 37.891 R | 109 I'll 38.088 R | 110 DM 38.284 R | 111 you 38.437 R | 112 the 38.634 R | 113 link. 38.83 R
+

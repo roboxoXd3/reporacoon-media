@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # usage: engine/build.sh episodes/epNN_slug  -> reels/epNN_slug.mp4 + covers/epNN.png
-# The episode folder needs: vo.wav, words.py (writes words.json + words.js), timeline.js, sfx.json, cover.json, any img/*.png it uses.
+# The episode folder needs: script.json + vo.wav (run engine/align.py first) or words.py, timeline.js, sfx.json, cover.json, any *.png it uses.
 set -euo pipefail
 EP=$(realpath "$1"); NAME=$(basename "$EP"); NUM=${NAME%%_*}; ROOT=$(realpath "$(dirname "$0")/.."); E=$ROOT/engine
-cd "$EP"; python3 words.py >/dev/null
+cd "$EP"; if [ -f words.py ]; then python3 words.py >/dev/null; elif [ ! -f words.js ]; then python3 "$E/align.py" "$EP" >/dev/null; fi
 cp timeline.js "$E/scene/timeline.js"; cp words.js "$E/scene/words.js"
 for f in "$EP"/*.png; do [ -e "$f" ] && cp "$f" "$E/scene/img/"; done
 cd "$E"; python3 render.py video "$EP/frames.mp4"
