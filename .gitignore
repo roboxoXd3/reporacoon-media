@@ -1,0 +1,10 @@
+engine/scene/words.js
+engine/scene/timeline.js
+episodes/*/words.js
+episodes/*/words.json
+episodes/*/frames.mp4
+episodes/*/mix.wav
+episodes/*/reel.mp4
+engine/scene/img/*.png
+!engine/scene/img/m/
+chk/

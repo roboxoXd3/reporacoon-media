@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Serif;src:url(fonts/is-400.woff2)}
+@font-face{font-family:Serif;font-style:italic;src:url(fonts/is-400i.woff2)}
+@font-face{font-family:Sans;font-weight:700;src:url(fonts/it-700.woff2)}
+@font-face{font-family:Sans;font-weight:800;src:url(fonts/it-800.woff2)}
+@font-face{font-family:Sans;font-weight:400;src:url(fonts/it-400.woff2)}
+@font-face{font-family:Mono;font-weight:400;src:url(fonts/jb-400.woff2)}
+@font-face{font-family:Mono;font-weight:700;src:url(fonts/jb-700.woff2)}
+:root{--brand:#2443E8;--brand2:#1B33C2;--acc:#FFC83D;--ink:#0A0B10}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden}
+.layer{position:absolute;inset:0;opacity:0}
+.brand{background:radial-gradient(120% 80% at 50% 30%,#2C4CF2 0%,#2443E8 45%,#1A31B8 100%)}
+.dark{background:#07080B}
+.glow{position:absolute;border-radius:50%;filter:blur(120px);opacity:.55}
+.headline{position:absolute;left:0;right:0;top:250px;text-align:center;color:#fff;font-family:Serif;font-size:118px;line-height:1.02;letter-spacing:-1px}
+.headline i{color:var(--acc)}
+.mascot{position:absolute;left:50%;bottom:120px;width:1000px;transform-origin:50% 100%}
+.cap{position:absolute;left:60px;right:60px;top:1250px;text-align:center;color:#fff;font-family:Sans;font-weight:800;font-size:66px;line-height:1.15}
+.cap span{display:inline-block;opacity:0;transform:translateY(18px)}
+.cap .a{color:var(--acc)}
+.foot{position:absolute;left:0;right:0;bottom:120px;text-align:center;font-family:Mono;font-size:22px;color:#3a3f4c;letter-spacing:.5px}
+.shot{position:absolute;border-radius:28px;overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.65),0 0 0 2px rgba(255,255,255,.08);background:#111}
+.shot img{display:block;position:absolute;transform-origin:0 0}
+.pop{position:absolute;left:0;right:0;text-align:center;color:#fff;font-family:Sans;font-weight:800;font-size:96px}
+.badge{position:absolute;padding:16px 30px;border-radius:999px;background:#fff;color:var(--ink);font-family:Sans;font-weight:800;font-size:44px;box-shadow:0 10px 0 rgba(0,0,0,.18)}
+.badge.y{background:var(--acc)}
+.title{position:absolute;left:0;right:0;text-align:center;color:#fff;font-family:Sans;font-weight:800;font-size:170px;letter-spacing:-5px}
+.kicker{position:absolute;left:0;right:0;text-align:center;font-family:Mono;font-weight:700;font-size:28px;letter-spacing:6px;color:#6b7180}
+.logo{position:absolute;left:50%;width:180px;height:180px;margin-left:-90px;border-radius:44px;background:linear-gradient(135deg,#7b5cff,#ff4fd8);display:flex;align-items:center;justify-content:center}
+.card{position:absolute;left:90px;right:90px;border-radius:40px;background:#16171C;padding:44px 50px;box-shadow:0 30px 80px rgba(0,0,0,.4);color:#fff;font-family:Sans}
+.btn{display:inline-flex;align-items:center;justify-content:center;width:260px;height:96px;border-radius:24px;font-weight:800;font-size:40px}
+.finger{position:absolute;width:110px;height:110px;border-radius:50%;border:6px solid rgba(255,255,255,.9);background:rgba(255,255,255,.25)}
+.pill{display:inline-block;padding:14px 34px;border-radius:999px;background:#fff;color:var(--ink);font-family:Sans;font-weight:800;font-size:44px}
+.cursor{position:absolute;width:56px;height:56px}
+.flash{position:absolute;inset:0;background:#fff;opacity:0}
+.phone{position:absolute;border-radius:70px;background:#0b0c10;padding:16px;box-shadow:0 50px 140px rgba(0,0,0,.7),0 0 0 3px #2a2d36}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:56px;overflow:hidden;background:#fff}
+.phone .scr img{position:absolute;left:0;top:0;transform-origin:0 0}
+.phone .notch{position:absolute;left:50%;top:30px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:#000;z-index:3}
+.rec{position:absolute;padding:14px 26px;border-radius:999px;background:#E5352B;color:#fff;font-family:Mono;font-weight:700;font-size:38px;letter-spacing:2px}
+.counter{position:absolute;left:0;right:0;text-align:center;color:#fff;font-family:Sans;font-weight:800;font-size:200px;letter-spacing:-6px}
+.board{position:absolute;left:60px;right:60px;top:190px;height:820px;border-radius:44px;background:#F7F5EE;box-shadow:0 30px 90px rgba(0,0,0,.35),inset 0 0 0 10px #E3DFD2}
+.kick{position:absolute;left:0;right:0;text-align:center;font-family:Mono;font-weight:700;font-size:30px;letter-spacing:7px;color:#8a8577}
+.hand{position:absolute;font-family:Serif;font-style:italic;color:#1d2340;white-space:nowrap}
+.stamp{position:absolute;padding:14px 34px;border:9px solid #E5352B;border-radius:22px;color:#E5352B;font-family:Sans;font-weight:800;font-size:64px;letter-spacing:2px;background:rgba(255,255,255,.6)}
+.bubble{position:absolute;max-width:900px;padding:30px 42px;border-radius:44px;background:#fff;color:var(--ink);font-family:Sans;font-weight:800;font-size:58px;line-height:1.12;box-shadow:0 18px 0 rgba(0,0,0,.18);opacity:0}
+.bubble.i{background:#9FF0CF}
+.bubble span{display:inline-block}
+.bubble .tail{position:absolute;bottom:-34px;width:0;height:0;border-left:30px solid transparent;border-right:30px solid transparent;border-top:42px solid #fff}
+.bubble.i .tail{border-top-color:#9FF0CF}
+.who{position:absolute;top:-30px;padding:6px 18px;border-radius:999px;background:var(--ink);color:#fff;font-family:Mono;font-weight:700;font-size:24px;letter-spacing:3px}
+.char{position:absolute;bottom:-20px;transform-origin:50% 100%}
+.timer{position:absolute;font-family:Mono;font-weight:700;color:#fff;background:var(--ink);border-radius:26px;padding:10px 30px;font-size:80px}
+.ls{position:absolute;left:50%;width:220px;height:220px;margin-left:-110px;border-radius:56px;background:linear-gradient(140deg,#1fd8a4,#0e9e8a);box-shadow:0 20px 60px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center}
+.chip{position:absolute;padding:14px 26px;border-radius:20px;background:var(--acc);color:var(--ink);font-family:Sans;font-weight:800;font-size:40px;box-shadow:0 10px 0 rgba(0,0,0,.2)}
+.bar{position:absolute;height:22px;border-radius:11px;background:rgba(255,255,255,.18);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc)}
+</style></head>
+<body><div id="stage"></div>
+<script src="words.js"></script><script src="helpers.js"></script><script src="timeline.js"></script>
+</body></html>

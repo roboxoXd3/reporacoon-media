@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Serif;src:url(../v2/scene/fonts/is-400.woff2)}
+@font-face{font-family:Serif;font-style:italic;src:url(../v2/scene/fonts/is-400i.woff2)}
+@font-face{font-family:Sans;font-weight:800;src:url(../v2/scene/fonts/it-800.woff2)}
+@font-face{font-family:Mono;font-weight:700;src:url(../v2/scene/fonts/jb-700.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:radial-gradient(120% 80% at 50% 30%,#2C4CF2 0%,#2443E8 45%,#1A31B8 100%);position:relative;font-family:Sans}
+/* Instagram grid shows the centre 1080x1440 (y 240-1680): keep key content inside */
+.ep{position:absolute;top:300px;left:0;right:0;text-align:center}
+.ep span{display:inline-block;background:#FFC83D;color:#0A0B10;font-family:Mono;font-weight:700;font-size:34px;letter-spacing:4px;padding:12px 28px;border-radius:999px}
+.t{position:absolute;top:400px;left:50px;right:50px;text-align:center;color:#fff;font-family:Serif;font-size:132px;line-height:1.0;letter-spacing:-1px}
+.t i{color:#FFC83D}
+.repo{position:absolute;top:720px;left:0;right:0;text-align:center}
+.repo span{display:inline-block;background:#0A0B10;color:#fff;font-weight:800;font-size:46px;padding:16px 34px;border-radius:22px}
+.m{position:absolute;left:0;right:0;margin:auto;bottom:170px;height:860px;width:auto}
+.b{position:absolute}
+</style></head><body>
+<div class="ep"><span id="ep"></span></div>
+<div class="t" id="t"></div>
+<div class="repo"><span id="repo"></span></div>
+<img class="m" id="m">
+<svg class="b" style="left:820px;top:880px;width:170px;height:170px" viewBox="0 0 150 150"><g stroke="#FFC83D" stroke-width="16" stroke-linecap="round"><line x1="20" y1="80" x2="2" y2="30"/><line x1="60" y1="62" x2="78" y2="8"/><line x1="92" y1="98" x2="140" y2="70"/></g></svg>
+<script>
+const q=new URLSearchParams(location.search);
+document.getElementById('ep').textContent=q.get('ep');
+document.getElementById('t').innerHTML=q.get('t');
+document.getElementById('repo').textContent=q.get('repo');
+document.getElementById('m').src='../scene/img/m/'+q.get('m')+'.png';
+</script></body></html>
