@@ -69,7 +69,10 @@
   "stars_at_planning": 52726,
   "task": "Make a blurry old photo sharp again. Free, offline.",
   "cta_word": "SHARP",
-  "status": "planned"
+  "status": "queued",
+  "nuelink_post_id": 5366835,
+  "stars_at_run": 52865,
+  "note": "Nuelink postDate was still null right after queueing; expected next free slot 2026-11-22 20:05 IST"
  },
  {
   "ep": 8,
