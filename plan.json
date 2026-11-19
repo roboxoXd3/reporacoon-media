@@ -83,7 +83,9 @@
   "stars_at_planning": 135770,
   "task": "Draw a system diagram that looks hand-sketched, in 2 minutes.",
   "cta_word": "DRAW",
-  "status": "planned"
+  "status": "queued",
+  "nuelink_post_id": 5372118,
+  "stars_at_run": 135938
  },
  {
   "ep": 9,
