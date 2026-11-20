@@ -1,0 +1,9 @@
+[
+["R","Run a ChatGPT style AI on your own laptop. Private. No monthly bill. Go."],
+["I","Easy! I'll buy four GPUs, train my own model, write a server, build a chat app... give me six months."],
+["R","Six months?"],
+["I","Okay... five?"],
+["R","Rule number one: before you build anything, check what already exists. It's called Ollama. Free, open source, and it runs on Mac, Windows and Linux. Install it with one command. Type ollama run, and a model name. Start chatting. Done. Everything runs locally, with complete privacy, plus an API for your own apps."],
+["I","So... what do I do with my four GPUs?"],
+["R","Return them. Download a model instead. Comment LOCAL, and I'll DM you the link."]
+]
