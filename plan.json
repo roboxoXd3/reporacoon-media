@@ -122,7 +122,10 @@
     "stars_at_planning": 210624,
     "task": "Every morning, get a summary of your emails on Telegram. Automatically.",
     "cta_word": "AUTO",
-    "status": "planned"
+    "status": "queued",
+    "nuelink_post_id": 5389734,
+    "stars_at_run": 211729,
+    "license_note": "fair-code (Sustainable Use License), described as fair-code/self-hostable, not open source"
   },
   {
     "ep": 12,
