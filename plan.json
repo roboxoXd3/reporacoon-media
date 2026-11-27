@@ -151,7 +151,7 @@
     "status": "dropped",
     "nuelink_post_id": 5422050,
     "stars_at_run": 81465,
-    "note": "Built in the old skit format and queued, then pulled on 2026-11-28 when the owner switched to the new formats. Replaced by ep14 in the 2026-11-28 slot."
+    "note": "Built in the old skit format and queued, then pulled on 2026-11-28 when the owner switched to the new formats. Replaced by ep14 in the 2026-11-28 slot. Nuelink post 5422050 moved to DRAFT (not deleted)."
   },
   {
     "ep": 14,
@@ -165,7 +165,8 @@
     "task": "40 USB-C cables, which one charges fast?",
     "cta_word": "CABLE",
     "status": "queued",
-    "stars_at_run": 9375
+    "stars_at_run": 9375,
+    "nuelink_post_id": 5422158
   },
   {
     "ep": 15,
