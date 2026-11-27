@@ -223,9 +223,10 @@
     "post_date": "2026-12-02",
     "task": "Three free Mac tools that feel like cheat codes.",
     "cta_word": "MAC",
-    "status": "planned",
+    "status": "queued",
     "note": "Planned macos-sysdata is proprietary (source-available, not open source) and OpenLogi says it is not yet stable, so swapped in Maccy and MonitorControl.",
-    "stars_at_planning": null
+    "stars_at_planning": null,
+    "nuelink_post_id": 5422291
   },
   {
     "ep": 19,
