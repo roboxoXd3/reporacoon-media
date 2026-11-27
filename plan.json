@@ -209,19 +209,23 @@
     "stars_at_planning": 8648,
     "task": "Send a message with no internet and no mobile network.",
     "cta_word": "MESH",
-    "status": "planned"
+    "status": "queued",
+    "nuelink_post_id": 5422276,
+    "stars_at_run": 8648
   },
   {
     "ep": 18,
     "slug": "ep18_mac-cheatcodes",
-    "repo": "Jarvis322/macos-sysdata + newmarcel/KeepingYouAwake + AprilNEA/OpenLogi",
+    "repo": "p0deje/Maccy + MonitorControl/MonitorControl + newmarcel/KeepingYouAwake",
     "category": "Mac",
     "format": "5_cheat_code_list",
     "language": "hinglish",
     "post_date": "2026-12-02",
     "task": "Three free Mac tools that feel like cheat codes.",
     "cta_word": "MAC",
-    "status": "planned"
+    "status": "planned",
+    "note": "Planned macos-sysdata is proprietary (source-available, not open source) and OpenLogi says it is not yet stable, so swapped in Maccy and MonitorControl.",
+    "stars_at_planning": null
   },
   {
     "ep": 19,
