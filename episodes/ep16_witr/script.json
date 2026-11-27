@@ -1,0 +1,8 @@
+[
+["R","Port five thousand pe kuch chal raha hai. ps, lsof, top... aadhe ghante se dhoondh raha hoon, ye aaya kahan se."],
+["I","Sir, ek command. witr, port five thousand."],
+["R","Witr?"],
+["I","Why is this running. Free, open source tool. Linux, Mac, Windows, sab pe chalta hai. Process, port, container, kuch bhi do, poori chain bata deta hai: kisne start kiya, aur kaun zinda rakh raha hai."],
+["R","Systemd, phir PM2, phir node... main senior hoon ya tu?"],
+["I","Aaj main. Comment WHY, link bhejta hoon. Aur us senior ko bhejo jo abhi bhi lsof mein ghoom raha hai."]
+]

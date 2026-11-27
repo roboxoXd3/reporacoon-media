@@ -179,7 +179,9 @@
     "stars_at_planning": 10374,
     "task": "Remove the bloatware apps from your Android phone without root.",
     "cta_word": "CLEAN",
-    "status": "planned"
+    "status": "queued",
+    "nuelink_post_id": 5422228,
+    "stars_at_run": 10375
   },
   {
     "ep": 16,
