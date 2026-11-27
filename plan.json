@@ -194,7 +194,9 @@
     "stars_at_planning": 23476,
     "task": "Which process is holding port 3000, and who started it?",
     "cta_word": "WHY",
-    "status": "planned"
+    "status": "queued",
+    "nuelink_post_id": 5422258,
+    "stars_at_run": 23478
   },
   {
     "ep": 17,
