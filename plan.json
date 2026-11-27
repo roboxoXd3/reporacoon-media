@@ -149,7 +149,10 @@
     "stars_at_planning": 81236,
     "task": "Turn a screenshot of any website into working code.",
     "cta_word": "CODE",
-    "status": "planned"
+    "status": "queued",
+    "nuelink_post_id": 5422050,
+    "stars_at_run": 81465,
+    "note": "Demo panel is an illustration: README screenshots show a third-party news site with political headlines."
   },
   {
     "ep": 14,
